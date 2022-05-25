@@ -34,3 +34,10 @@ TextStyle labelRegular = GoogleFonts.inter(
   color: highEmphasis,
   height: 1.18,
 );
+
+TextStyle caption = GoogleFonts.inter(
+  fontWeight: FontWeight.w400,
+  fontSize: 12,
+  color: highEmphasis,
+  height: 1.22,
+);

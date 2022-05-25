@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pemanen_mobile/component/pm_app_bar.dart';
 import 'package:pemanen_mobile/component/pm_asset.dart';
 import 'package:pemanen_mobile/core/constants/assets.dart';
+import 'package:pemanen_mobile/pages/detail_pemanen/component/select_block_sheet.dart';
 import 'package:pemanen_mobile/theme/theme.dart';
 
 class DetailPemanenScreen extends StatefulWidget {
@@ -138,11 +139,15 @@ class _DetailPemanenScreenState extends State<DetailPemanenScreen> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: _onPressedFab,
         backgroundColor: primary,
         elevation: 0,
         child: const Icon(Icons.add),
       ),
     );
+  }
+
+  void _onPressedFab() async {
+    await SelectBlockSheet.show(context);
   }
 }
