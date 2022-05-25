@@ -162,7 +162,10 @@ class _SelectRowViewState extends State<_SelectRowView> {
               Expanded(
                 child: PmButton.primary(
                   text: 'Buat',
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pop(context);
+                    Navigator.pop(context, _dummyAncakMutu);
+                  },
                 ),
               )
             ],
@@ -211,3 +214,21 @@ class _ModelItem extends StatelessWidget {
     );
   }
 }
+
+List<dynamic> _dummyAncakMutu = [
+  {
+    'block': 'A24',
+    'type': 'Tunggal',
+    'row': ['5']
+  },
+  {
+    'block': 'A24',
+    'type': 'Kanan Kiri',
+    'row': ['3', '4']
+  },
+  {
+    'block': 'A24',
+    'type': 'Tunggal',
+    'row': ['6']
+  },
+];

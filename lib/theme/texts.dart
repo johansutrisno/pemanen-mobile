@@ -7,6 +7,13 @@ TextStyle headingMedium = GoogleFonts.inter(
   height: 1.26,
 );
 
+TextStyle headingRegular = GoogleFonts.inter(
+  fontWeight: FontWeight.w700,
+  fontSize: 16,
+  color: highEmphasis,
+  height: 1.24,
+);
+
 TextStyle bodyBold = GoogleFonts.inter(
   fontWeight: FontWeight.w700,
   fontSize: 14,
